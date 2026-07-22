@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit Your Property | Vacant Land Buyer</title>
+  <meta name="description" content="Submit vacant land information to Vacant Land Buyer for a no-obligation property review.">
+  <style>
+    :root{
+      --ink:#123f39;
+      --green:#236f5d;
+      --cream:#fffdf8;
+      --sand:#f4efe5;
+      --line:#d9d5cc;
+      --muted:#556761;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+    .wrap{width:min(980px,92%);margin:auto}
+    header{border-bottom:1px solid var(--line);background:#fff}
+    nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    nav a{text-decoration:none;color:var(--ink);font-weight:800}
+    .btn{display:inline-block;background:var(--green);color:#fff;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:800;border:0;cursor:pointer}
+    main{padding:58px 0 80px}
+    h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin:.3rem 0 1rem}
+    .lead{font-size:1.08rem;color:var(--muted)}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;margin:28px 0;box-shadow:0 12px 30px rgba(18,63,57,.08)}
+    .choice{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:17px 0;border-bottom:1px solid #ece8df}
+    .choice:last-child{border-bottom:0}
+    .choice input{width:19px;height:19px;margin-top:4px}
+    .choice label{font-size:.94rem}
+    .fine{font-size:.88rem;color:var(--muted)}
+    .form-frame{width:100%;min-height:1100px;border:1px solid var(--line);border-radius:12px;background:#fff}
+    .fallback{margin-top:14px}
+    footer{background:#0e2e28;color:#e9f2ef;padding:30px 0}
+    footer a{color:#fff}
+    @media(max-width:700px){main{padding-top:38px}.panel{padding:18px}.form-frame{min-height:1250px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Vacant Land Buyer</a>
+      <a class="btn" href="#property-form">Submit Your Property</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p><a href="index.html">← Return to home</a></p>
+    <h1>Tell us about your property</h1>
+    <p class="lead">Complete the secure property form below. The communication-consent checkboxes are optional and are not required to submit a property inquiry.</p>
+
+    <section class="panel" aria-labelledby="communication-preferences">
+      <h2 id="communication-preferences">Communication preferences</h2>
+
+      <div class="choice">
+        <input id="legal-consent" type="checkbox" name="legal-consent">
+        <label for="legal-consent">
+          I agree to the
+          <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+          and
+          <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <div class="choice">
+        <input id="transactional-consent" type="checkbox" name="transactional-consent">
+        <label for="transactional-consent">
+          I agree to receive transactional or conversational communications from
+          <strong>Vacant Land Buyer</strong> via text messages and phone calls related to my real estate inquiry,
+          such as property details, responses, and appointment confirmations. Message frequency varies.
+          Reply STOP to opt out. Reply HELP for help. Msg &amp; data rates may apply.
+          Your information is secure and will not be sold or shared with third parties or affiliates for promotional purposes.
+        </label>
+      </div>
+
+      <div class="choice">
+        <input id="marketing-consent" type="checkbox" name="marketing-consent">
+        <label for="marketing-consent">
+          I agree to receive marketing communications from <strong>Vacant Land Buyer</strong>
+          via text messages and phone calls including property offers, promotions, and other real estate-related marketing.
+          Message frequency varies. Reply STOP to opt out. Reply HELP for help. Msg &amp; data rates may apply.
+          Your information is secure and will not be sold or shared with third parties or affiliates for marketing purposes.
+        </label>
+      </div>
+
+      <p class="fine"><strong>Important:</strong> All three checkboxes are optional and unchecked by default. Consent is freely given and is not a condition of submitting the property form.</p>
+    </section>
+
+    <section id="property-form">
+      <h2>Secure REsimpli property form</h2>
+      <iframe
+        class="form-frame"
+        title="Vacant Land Buyer property inquiry form"
+        src="https://dashboard.resimpli.com/public/web-form?webFormLink=6a5ec0a7de0f8d57f47ad262"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+
+      <p class="fallback">
+        If the form does not display,
+        <a class="btn" href="https://dashboard.resimpli.com/public/web-form?webFormLink=6a5ec0a7de0f8d57f47ad262" target="_blank" rel="noopener">
+          Open the secure property form
+        </a>
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>Vacant Land Buyer</strong><br>
+    Email: <a href="mailto:info@vacantlandbuyer.us">info@vacantlandbuyer.us</a><br>
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a>
+  </div>
+</footer>
+</body>
+</html>

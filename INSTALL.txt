@@ -1,0 +1,33 @@
+INSTALLATION
+
+1. Upload contact.html to the same GitHub repository/folder as:
+   - index.html
+   - privacy.html
+   - terms.html
+
+2. In index.html, replace the REsimpli button URL with:
+   contact.html
+
+Example:
+<a class="btn" href="contact.html">Submit Your Property</a>
+
+3. Commit the changes and wait for GitHub Pages to update.
+
+4. Visit:
+   https://vacantlandbuyer.us/contact.html
+
+5. Confirm:
+   - Privacy Policy and Terms links open as standalone pages.
+   - All three checkboxes are visible, optional, and unchecked.
+   - The REsimpli form appears inside the page.
+   - The fallback button opens the REsimpli form.
+
+IMPORTANT LIMITATION
+The official REsimpli documentation currently describes sharing the public Web Form link.
+It does not document an HTML/API endpoint that lets an outside custom form submit fields
+directly into REsimpli. This page therefore connects to REsimpli by embedding its public form.
+The consent checkboxes are displayed on the same webpage but are not technically stored
+inside REsimpli unless REsimpli adds equivalent fields to its form.
+
+Before resubmitting A2P, send the live contact-page URL to Jewel and ask her to confirm that
+an embedded REsimpli form with the required checkboxes on the same page is acceptable.
